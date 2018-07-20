@@ -36,7 +36,7 @@ $(".gif-button").on("click", function () {
 
     var APIkey = "WYj2KIdnQo3Dny9VKDPYkfaMqgeVt45Q";
 
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + movieToShow + "&api_key=" + APIkey + "&limit=5";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + movieToShow + "&api_key=" + APIkey + "&limit=5";
 
     $.ajax({
         url: queryURL,
