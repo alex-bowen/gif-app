@@ -49,8 +49,75 @@ body {
 .gif-styling {
     margin-bottom: 20px;
     border: 3px solid #DC3545;
+    body {
+    background-color: rgb(20, 20, 20);
+    background-image: url(../images/triangles.png);
+}
+
+#main-container {
+    margin-top: 20px;
+}
+
+.navcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#submit-name {
+    margin-top: 5px;
+    float: right;
+}
+
+#add {
+    font-size: 20px;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+
+#left-section {
+    min-height: 500px;
+}
+
+#left-section, 
+#right-section {
+    background-color: lightgray;
+    padding-bottom: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+    border-radius: 3px;
+
+}
+
+.gif-button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.gif-styling {
+    margin-bottom: 20px;
+    border: 3px solid #DC3545;
 }
 
 .rating-styling {
     font-size: 20px;
 }
+
+.gif-styling {
+    max-width: 600px;
+}
+
+
+
+
+}
+
+.rating-styling {
+    font-size: 20px;
+}
+
+
+

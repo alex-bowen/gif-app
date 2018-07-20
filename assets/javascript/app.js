@@ -19,17 +19,18 @@ function addButtons() {
 
 addButtons();
 
+
 // Creates buttons based on user input
 $("#submit-name").on("click", function () {
     event.preventDefault();
 
-    var userAddition = $("#movie-input").val().trim();
+    userAddition = $("#movie-input").val().trim();
     movies.push(userAddition);
     addButtons();
 });
 
-// Renders gifs
-$(".gif-button").on("click", function () {
+
+function renderGifs () {
     $("#gif-section").empty();
     console.log("CLICKED!");
     var movieToShow = $(this).attr("data-title");
@@ -63,7 +64,10 @@ $(".gif-button").on("click", function () {
                     actionGif.attr("data-still", results[i].images.fixed_height_still.url);
                     actionGif.attr("data-animate", results[i].images.fixed_height.url);
                     actionGif.attr("data-state", "still");
+
                     actionGif.addClass("gif-styling");
+                    // actionGif.addClass("gif-button");
+
 
                     ratingP.addClass("rating-styling");
 
@@ -73,12 +77,12 @@ $(".gif-button").on("click", function () {
                     $("#gif-section").prepend(gifDiv);
                 }
             }
-
-    
-
         });
-});
+}
 
+$(document).on("click", ".gif-button", renderGifs);
+
+// Pause and play gifs
 $(document).on("click", "#click-gif", function () {
 
     var state = $(this).attr("data-state");
